@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F74172D-AB84-413C-AFF8-20777CC3B48A}"
-	ProjectSection(SolutionItems) = preProject
-		src\.gitignore = src\.gitignore
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "src\AuctionService\AuctionService.csproj", "{565056DF-6A30-4AA0-A404-734C31E1B2AF}"
 EndProject

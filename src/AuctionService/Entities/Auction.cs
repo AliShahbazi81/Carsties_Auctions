@@ -1,4 +1,6 @@
 using AuctionService.Enums;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AuctionService.Entities;
 
@@ -17,4 +19,12 @@ public class Auction
     
     // Relations
     public Item Item { get; set; }
+}
+
+public class AuctionBuilder : IEntityTypeConfiguration<Auction>
+{
+    public void Configure(EntityTypeBuilder<Auction> builder)
+    {
+        builder.ToTable("Auctions");
+    }
 }
