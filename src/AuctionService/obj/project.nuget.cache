@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EtPgKz0bAD1nDubZaZk283jaHNu67uNHRDgusrbVbOBcuOydjyk4UFbjxLI0BpMR8WXwXP54kGjZOz102UE2fQ==",
+  "dgSpecHash": "bRCKjSUuq6dbszGxCOq02b/j11bv4Vq0WtKJ67wFmkpXicpUcs/ruIx1PqeJ9uGh0wsNBo28SYTTYQPadtXqDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\alish\\RiderProjects\\Carsties\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\alish\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\alish\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\alish\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.14\\microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",
