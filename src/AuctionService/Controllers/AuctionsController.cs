@@ -76,6 +76,7 @@ public class AuctionsController : ControllerBase
         if (auction == null)
             return NotFound();
         
+        
         //TODO: Check seller == username
 
         auction.Item.Make = updateAuctionDto.Make ?? auction.Item.Make;
