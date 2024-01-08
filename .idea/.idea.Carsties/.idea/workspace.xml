@@ -12,13 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SearchService/Data/DbInitializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchService/Data/auctions.json" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="MongoDb configuration and seeding database">
+      <change afterPath="$PROJECT_DIR$/src/SearchService/Controllers/SearchController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SearchService/RequestHelpers/SearchParams.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,7 @@
       <workItem from="1704599273790" duration="34000" />
       <workItem from="1704653278197" duration="2449000" />
       <workItem from="1704657055203" duration="6196000" />
-      <workItem from="1704735699271" duration="806000" />
+      <workItem from="1704735699271" duration="2565000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -228,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704683817638</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MongoDb configuration and seeding database">
+      <option name="closed" value="true" />
+      <created>1704736541196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704736541196</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -278,6 +283,7 @@
     <MESSAGE value="Auction controller" />
     <MESSAGE value="Finalizing auction controller" />
     <MESSAGE value="Init SearchService files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init SearchService files" />
+    <MESSAGE value="MongoDb configuration and seeding database" />
+    <option name="LAST_COMMIT_MESSAGE" value="MongoDb configuration and seeding database" />
   </component>
 </project>
