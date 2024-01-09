@@ -12,7 +12,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Retry policy for MongoDb inside SearchService" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add AuctionCreatedFault and consumer">
+      <change afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionDeletedConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionUpdatedConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/RequestHelpers/MappingProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/RequestHelpers/MappingProfiles.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +180,7 @@
       <workItem from="1704653278197" duration="2449000" />
       <workItem from="1704657055203" duration="6196000" />
       <workItem from="1704735699271" duration="9227000" />
-      <workItem from="1704822001617" duration="5546000" />
+      <workItem from="1704822001617" duration="8383000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -279,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704827563597</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add AuctionCreatedFault and consumer">
+      <option name="closed" value="true" />
+      <created>1704828528959</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704828528959</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -336,6 +351,7 @@
     <MESSAGE value="Publish a message to bus after auction creation" />
     <MESSAGE value="Add inbox and outbox inside AuctionService" />
     <MESSAGE value="Retry policy for MongoDb inside SearchService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retry policy for MongoDb inside SearchService" />
+    <MESSAGE value="Add AuctionCreatedFault and consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add AuctionCreatedFault and consumer" />
   </component>
 </project>
