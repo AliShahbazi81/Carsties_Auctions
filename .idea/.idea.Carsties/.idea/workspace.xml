@@ -12,29 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Contracts/AuctionCreated.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contracts/AuctionDeleted.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contracts/AuctionUpdated.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contracts/Contracts.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchService/RequestHelpers/MappingProfiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carsties.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Carsties.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/SearchService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/SearchService.csproj" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Setup masstransit rabbitmq, contracts, and consumer">
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/RequestHelpers/MappingProfiles.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +175,7 @@
       <workItem from="1704653278197" duration="2449000" />
       <workItem from="1704657055203" duration="6196000" />
       <workItem from="1704735699271" duration="9227000" />
-      <workItem from="1704822001617" duration="2106000" />
+      <workItem from="1704822001617" duration="2584000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -269,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704741372063</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Setup masstransit rabbitmq, contracts, and consumer">
+      <option name="closed" value="true" />
+      <created>1704824245402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704824245402</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -322,6 +310,7 @@
     <MESSAGE value="MongoDb configuration and seeding database" />
     <MESSAGE value="SearchService controller" />
     <MESSAGE value="Make sync connection between Auction and Search services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make sync connection between Auction and Search services" />
+    <MESSAGE value="Setup masstransit rabbitmq, contracts, and consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup masstransit rabbitmq, contracts, and consumer" />
   </component>
 </project>
