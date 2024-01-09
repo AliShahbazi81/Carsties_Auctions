@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UHkuqlG8zoD6ujmr2DaRliZLZ4JkGuZvuF0bmRSxDotZnifriQKot15k9g9aOAkc8qP6ZsDhD/AgYjVUzB/XOg==",
+  "dgSpecHash": "zr+AVoy4uEjhkK3MeLwmVK4+IhE7PC9ztKx2+HkoNIIK0mhL74OWhRbU9m2BAeRW5MVIQpNg245mpmVUV3rErg==",
   "success": true,
   "projectFilePath": "C:\\Users\\alish\\RiderProjects\\Carsties\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\alish\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\masstransit\\8.1.3\\masstransit.8.1.3.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\masstransit.abstractions\\8.1.3\\masstransit.abstractions.8.1.3.nupkg.sha512",
+    "C:\\Users\\alish\\.nuget\\packages\\masstransit.entityframeworkcore\\8.1.3\\masstransit.entityframeworkcore.8.1.3.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\masstransit.rabbitmq\\8.1.3\\masstransit.rabbitmq.8.1.3.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\alish\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",

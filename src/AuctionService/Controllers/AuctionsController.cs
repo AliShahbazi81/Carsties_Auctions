@@ -61,17 +61,17 @@ public class AuctionsController : ControllerBase
         // TODO: Add current user as seller
         auction.Seller = "Test";
         auction.AuctionEnd = auction.AuctionEnd.ToUniversalTime();
+        
+        var newAuction = _mapper.Map<AuctionDto>(auction);
+
+        // After creation of Auction, we send it to bus
+        await _publishEndpoint.Publish(_mapper.Map<AuctionCreated>(newAuction));
 
         _context.Auctions.Add(auction);
         var result = await _context.SaveChangesAsync() > 0;
 
         if (!result)
             return BadRequest();
-
-        var newAuction = _mapper.Map<AuctionDto>(auction);
-
-        // After creation of Auction, we send it to bus
-        await _publishEndpoint.Publish(_mapper.Map<AuctionCreated>(newAuction));
         
         return CreatedAtAction(
             nameof(GetById), 
