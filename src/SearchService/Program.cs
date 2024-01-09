@@ -24,6 +24,15 @@ builder.Services.AddMassTransit(x =>
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search", false));
     x.UsingRabbitMq((context, cfg) =>
     {
+        // If auction is created successfully, but Mongo which is our search Db is down, then we will face problem.
+        // Hence, we will implement retry policy to avoid that
+        cfg.ReceiveEndpoint("search-auction-created", endpoint =>
+        {
+            endpoint.UseMessageRetry(r => r.Interval(5, 5));
+            
+            // Which consumer we are implementing for
+            endpoint.ConfigureConsumer<AuctionCreatedConsumer>(context);
+        });
         cfg.ConfigureEndpoints(context);
     });
 });
