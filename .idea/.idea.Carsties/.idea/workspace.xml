@@ -13,132 +13,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Auction update and delete publisher and consumer">
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20211227182747_Users.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20211227182747_Users.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/IdentityService.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Models/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/AccessDenied.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/AccessDenied.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/InputModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/LoginOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/LoggedOut.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/LoggedOut.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/LoggedOutViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Logout/LogoutOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/All.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/All.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/Consent.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/Consent.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/ConsentOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/InputModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Ciba/_ScopeListItem.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/ConsentOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/InputModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Consent/_ScopeListItem.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/DeviceOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/InputModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/Success.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/Success.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Device/_ScopeListItem.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Diagnostics/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Diagnostics/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Diagnostics/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/ExternalLogin/Callback.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/ExternalLogin/Callback.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/ExternalLogin/Challenge.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/ExternalLogin/Challenge.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Grants/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Grants/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Grants/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Home/Error/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Home/Error/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Home/Error/ViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Redirect/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Redirect/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/SecurityHeadersAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Shared/_Nav.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Shared/_ValidationSummary.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/SeedData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/buildschema.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/buildschema.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/css/site.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/css/site.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/duende-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/js/signin-redirect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/js/signout-redirect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/css/bootstrap-glyphicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/fonts/glyphicons/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/fonts/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/fonts/glyphicons/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/fonts/glyphicons/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/fonts/glyphicons/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/maps/glyphicons-fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/maps/glyphicons-fontawesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/bootstrap4-glyphicons/maps/glyphicons-fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IdentityService/wwwroot/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Init IdentityService files">
+      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Register/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Register/Index.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Register/RegisterViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carsties.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Carsties.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20211227182747_Users.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20240109235436_InitialCreate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20211227182747_Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/20240109235436_InitialCreate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/IdentityService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/IdentityService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Account/Login/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/SeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/SeedData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +204,7 @@
       <workItem from="1704653278197" duration="2449000" />
       <workItem from="1704657055203" duration="6196000" />
       <workItem from="1704735699271" duration="9227000" />
-      <workItem from="1704822001617" duration="11399000" />
+      <workItem from="1704822001617" duration="15927000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -437,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704831515535</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Init IdentityService files">
+      <option name="closed" value="true" />
+      <created>1704843326473</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704843326473</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -496,6 +393,7 @@
     <MESSAGE value="Retry policy for MongoDb inside SearchService" />
     <MESSAGE value="Add AuctionCreatedFault and consumer" />
     <MESSAGE value="Auction update and delete publisher and consumer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auction update and delete publisher and consumer" />
+    <MESSAGE value="Init IdentityService files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init IdentityService files" />
   </component>
 </project>
