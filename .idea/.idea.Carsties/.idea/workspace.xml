@@ -13,10 +13,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Get access token from postman using Duende">
+      <change afterPath="$PROJECT_DIR$/src/IdentityService/Services/CustomProfileService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IdentityService/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Config.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,7 @@
       <workItem from="1704735699271" duration="9227000" />
       <workItem from="1704822001617" duration="16851000" />
       <workItem from="1704906590049" duration="32000" />
-      <workItem from="1704906640724" duration="1708000" />
+      <workItem from="1704906640724" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -333,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704849273866</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Get access token from postman using Duende">
+      <option name="closed" value="true" />
+      <created>1704908533492</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1704908533492</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -394,6 +402,7 @@
     <MESSAGE value="Auction update and delete publisher and consumer" />
     <MESSAGE value="Init IdentityService files" />
     <MESSAGE value="Setup identity config, register page and cookies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup identity config, register page and cookies" />
+    <MESSAGE value="Get access token from postman using Duende" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get access token from postman using Duende" />
   </component>
 </project>
