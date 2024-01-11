@@ -30,6 +30,23 @@ public static class Config
                 ClientSecrets = new[] {new Secret("NotASecret".Sha256())},
                 // Authentication flow
                 AllowedGrantTypes = {GrantType.ResourceOwnerPassword}
+            },
+            new()
+            {
+                ClientId = "nextApp",
+                ClientName = "nextApp",
+                ClientSecrets = {new Secret("secret".Sha256())},
+                // CodeAndClientCredentials allow the client app to establish communication internally and securely without access_token involvement inside the browser
+                AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+                // For developing in mobile app
+                RequirePkce = false,
+                // Client-side url
+                RedirectUris = {"http://localhost:3000/api/auth/callback/id-server"},
+                // For allowing to refresh token-access
+                AllowOfflineAccess = true,
+                AllowedScopes = {"openid", "profile", "auctionApp"},
+                // Extend token lifetime - NOTE: This is not a good approach for production application
+                AccessTokenLifetime = 3600 * 24 * 30
             }
         };
 }
