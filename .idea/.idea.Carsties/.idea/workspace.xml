@@ -16,8 +16,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="GatewayService init files and configs">
-      <change beforePath="$PROJECT_DIR$/src/GatewayService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/Program.cs" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add authentication layer to gateway service">
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/Consumers/AuctionFinishedConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Contracts/AuctionFinished.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Contracts/BidPlaced.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +256,7 @@
       <workItem from="1704906590049" duration="32000" />
       <workItem from="1704906640724" duration="6301000" />
       <workItem from="1704945309099" duration="128000" />
-      <workItem from="1704999525371" duration="2788000" />
+      <workItem from="1704999525371" duration="7013000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -422,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705001194059</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add authentication layer to gateway service">
+      <option name="closed" value="true" />
+      <created>1705002862066</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705002862066</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -487,6 +499,7 @@
     <MESSAGE value="Add custom profile service to jwt token to return username and fullname" />
     <MESSAGE value="Add authorization to endpoints" />
     <MESSAGE value="GatewayService init files and configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="GatewayService init files and configs" />
+    <MESSAGE value="Add authentication layer to gateway service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add authentication layer to gateway service" />
   </component>
 </project>
