@@ -1,6 +1,7 @@
 using AuctionService.Consumers;
 using AuctionService.Data;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,9 +38,23 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        // Tells the server who the token was issued by
+        options.Authority = builder.Configuration["IdentityServiceUrl"];
+        // Since our server is running on HTTP, this has to be false, otherwise -> true
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters.ValidateAudience = false;
+        // Make sure the string all lower case
+        options.TokenValidationParameters.NameClaimType = "username";
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Without UseAuthentication, almost all of our endpoints will return 401
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
