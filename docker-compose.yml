@@ -75,3 +75,16 @@ services:
       - 5000:80
     depends_on: 
       - postgres
+  gateway-svc:
+    container_name: GatewayService
+    image: alishahbazi81/gateway-svc:latest
+    build:
+      context: .
+      dockerfile: src/GatewayService/Dockerfile
+    environment:
+      # We already added a json file named Docker.json and changed the cluster path inside
+      # We have to do the same for the reverse proxy for the docker
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_URLS=http://+80
+    ports:
+      - 6001:80

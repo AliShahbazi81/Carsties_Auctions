@@ -16,14 +16,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Dockerized auction, search, and identity services">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IdentityService/Pages/Diagnostics/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Pages/Diagnostics/Index.cshtml.cs" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Fix bug where identity service used to not show the user credential after login using docker">
+      <change afterPath="$PROJECT_DIR$/src/GatewayService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/GatewayService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/GatewayService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -256,6 +267,27 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="GatewayService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="gatewayservice" />
+          <option name="containerName" value="gatewayservice" />
+          <option name="contextFolderPath" value="C:\Users\alish\RiderProjects\Carsties" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/GatewayService/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="IdentityService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -323,7 +355,7 @@
       <workItem from="1704906640724" duration="6301000" />
       <workItem from="1704945309099" duration="128000" />
       <workItem from="1704999525371" duration="8493000" />
-      <workItem from="1705017759335" duration="6470000" />
+      <workItem from="1705017759335" duration="7335000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -533,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705023403027</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix bug where identity service used to not show the user credential after login using docker">
+      <option name="closed" value="true" />
+      <created>1705024896374</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1705024896374</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -578,7 +618,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init files" />
     <MESSAGE value="Auction entities" />
     <MESSAGE value="Auction controller" />
     <MESSAGE value="Finalizing auction controller" />
@@ -603,6 +642,7 @@
     <MESSAGE value="Add auction finished and bid placed contracts to search service" />
     <MESSAGE value="Add client-side configuration in identity server for connection" />
     <MESSAGE value="Dockerized auction, search, and identity services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerized auction, search, and identity services" />
+    <MESSAGE value="Fix bug where identity service used to not show the user credential after login using docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug where identity service used to not show the user credential after login using docker" />
   </component>
 </project>
