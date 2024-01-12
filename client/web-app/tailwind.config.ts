@@ -15,6 +15,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  // It also has another aspect-ratio. In order to use the one that we just installed, we have to disable the previous aspect-ratio
+  corePlugins: {
+    aspectRatio: false
+  },
+  plugins: [
+        require('@tailwindcss/aspect-ratio')
+  ],
 }
 export default config
