@@ -16,10 +16,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Dockerized gateway service and setup configuration">
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/web-app/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/HostingExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,28 +83,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.IdentityService: SelfHost.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.IdentityService: SelfHost.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo",
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;,
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\alish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\alish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\alish\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\alish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\alish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\alish\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IdentityService: SelfHost">
     <configuration name="AuctionService: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" />
@@ -328,7 +341,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -352,7 +368,8 @@
       <workItem from="1704906640724" duration="6301000" />
       <workItem from="1704945309099" duration="128000" />
       <workItem from="1704999525371" duration="8493000" />
-      <workItem from="1705017759335" duration="8250000" />
+      <workItem from="1705017759335" duration="9039000" />
+      <workItem from="1705082231927" duration="1268000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -578,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705025914247</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fix a bug which prevented the identity server from reading access token">
+      <option name="closed" value="true" />
+      <created>1705026710769</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1705026710769</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -623,7 +648,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Auction controller" />
     <MESSAGE value="Finalizing auction controller" />
     <MESSAGE value="Init SearchService files" />
     <MESSAGE value="MongoDb configuration and seeding database" />
@@ -648,6 +672,7 @@
     <MESSAGE value="Dockerized auction, search, and identity services" />
     <MESSAGE value="Fix bug where identity service used to not show the user credential after login using docker" />
     <MESSAGE value="Dockerized gateway service and setup configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerized gateway service and setup configuration" />
+    <MESSAGE value="Fix a bug which prevented the identity server from reading access token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix a bug which prevented the identity server from reading access token" />
   </component>
 </project>
