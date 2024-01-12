@@ -17,18 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/web-app/app/auctions/CountDownTimer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/web-app/app/auctions/Listings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/web-app/app/nav/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/web-app/app/auctions/CarImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,6 +356,7 @@
       <workItem from="1704999525371" duration="8493000" />
       <workItem from="1705017759335" duration="9039000" />
       <workItem from="1705082231927" duration="3062000" />
+      <workItem from="1705099455108" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />

@@ -1,6 +1,7 @@
 import AuctionCard from "@/app/auctions/AuctionCard";
+import {Auction, PagedResult} from "@/types";
 
-async function getData()
+async function getData() : Promise<PagedResult<Auction>>
 {
 	  // Fetch and catch returned data from the server side
 	  // Gateway address
@@ -17,7 +18,7 @@ export default async function Listings()
 	  const data = await getData();
 	  return(
 			<div className={"grid grid-cols-4 gap-6"}>
-				  {data && data.results.map((auction: any) => (
+				  {data && data.results.map(auction => (
 						<AuctionCard auction={auction} key={auction.id}/>
 				  ))}
 			</div>
