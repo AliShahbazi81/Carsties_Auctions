@@ -1,5 +1,6 @@
 services: 
   postgres:
+    container_name: Postgres
     image: postgres
     environment:
       - POSTGRES_PASSWORD=postgrespw
@@ -8,6 +9,7 @@ services:
     volumes:
       - /var/lib/postgresql/data
   mongodb:
+    container_name: MongoDb
     image: mongo
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=root
@@ -17,8 +19,59 @@ services:
     volumes:
       - /var/lib/mongodb/data
   rabbitmq:
+    container_name: RabbitMq
     image: rabbitmq:3-management-alpine
     ports:
       - 5672:5672
       - 15672:15672
-      
+  auction-svc:
+    container_name: AuctionService
+    image: alishahbazi81/auction-svc:latest
+    build:
+      context: .
+      dockerfile: src/AuctionService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      # The name of rabbitMq has to be the same with the name given to the docker-compose
+      - RabbitMq__Host=rabbitmq
+      # The name of the server has to be the same with the name given inside the docker-compose for the postgres
+      - ConnectionStrings__DefaultConnection=Server=postgres:5432; User Id=postgres; Password=postgrespw; Database=auction
+      - IdentityServiceUrl=http://identity-svc
+    ports:
+      - 7001:80
+    # For adding dependencies to a service:
+    depends_on: 
+      - postgres
+      - rabbitmq
+  search-svc:
+    container_name: SearchService
+    image: alishahbazi81/search-svc:latest
+    build:
+      context: .
+      dockerfile: src/SearchService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+80
+      - RabbitMq__Host=rabbitmq
+      - ConnectionStrings__MongoDbConnection=mongodb://root:mongopw@mongodb
+      - AuctionServiceUrl=http://auction-svc
+    ports:
+      - 7002:80
+    depends_on: 
+      - mongodb
+      - rabbitmq
+  identity-svc:
+    container_name: IdentityService
+    image: alishahbazi81/identity-svc:latest
+    build:
+      context: .
+      dockerfile: src/IdentityService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+80
+      - ConnectionStrings__DefaultConnection=Server=postgres:5432; User Id=postgres; Password=postgrespw; Database=identity
+    ports:
+      - 5000:80
+    depends_on: 
+      - postgres

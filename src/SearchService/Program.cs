@@ -24,6 +24,12 @@ builder.Services.AddMassTransit(x =>
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search", false));
     x.UsingRabbitMq((context, cfg) =>
     {
+        // The configs down below are written for docker specifically
+        cfg.Host(builder.Configuration["RabbitMq:Host"], "/", host =>
+        {
+            host.Username(builder.Configuration.GetValue("RabbitMq:Username", "guest"));
+            host.Password(builder.Configuration.GetValue("RabbitMq:Password", "guest"));
+        });
         // If auction is created successfully, but Mongo which is our search Db is down, then we will face problem.
         // Hence, we will implement retry policy to avoid that
         cfg.ReceiveEndpoint("search-auction-created", endpoint =>
