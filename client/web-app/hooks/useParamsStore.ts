@@ -1,0 +1,44 @@
+import {create} from "zustand";
+
+type State = {
+	  pageNumber: number
+	  pageSize: number
+	  pageCount: number
+	  searchTerm: string
+}
+
+type Actions = {
+	  // To update states in the type above
+	  // To partially update a state - means not updating all of them - we specify Partial
+	  setParams: (params: Partial<State>) => void
+	  reset: () => void
+}
+
+const initialState: State = {
+	  pageNumber: 1,
+	  pageSize: 12,
+	  pageCount: 1,
+	  searchTerm: ''
+}
+
+export const useParamsStore = create<State & Actions>()((set) => ({
+	  ...initialState,
+	  
+	  setParams: (newParams: Partial<State>) => {
+			set((state) => {
+				  if (newParams.pageNumber) 
+				  {
+						return {...state, pageNumber: newParams.pageNumber}
+				  }
+				  else
+				  {
+						// When user was in the last page, with changing the page size, it used to not show the result
+						// Using the code down below, that error is gone now
+						return {...state, ...newParams, pageNumber: 1}
+				  }
+			})
+	  },
+	  
+	  // For resting the state
+	  reset: () => set(initialState)
+}))
