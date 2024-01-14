@@ -9,7 +9,6 @@ import Filters from "@/app/auctions/Filters";
 import {useParamsStore} from "@/hooks/useParamsStore";
 import {shallow} from "zustand/shallow";
 import qs from'query-string';
-import * as querystring from "querystring";
 
 // Do not forget that we cannot use async and await while we are using useEffect hook.
 // If forgotten, the browser will hang 
@@ -18,7 +17,8 @@ export default function Listings() {
 	  const params = useParamsStore(state => ({
 			pageNumber: state.pageNumber,
 			pageSize: state.pageSize,
-			searchTerm: state.searchTerm
+			searchTerm: state.searchTerm,
+			orderBy: state.orderBy
 	  }), shallow)
 	  const setParams = useParamsStore(state => state.setParams);
 	  const url = qs.stringifyUrl({url: '', query: params});
