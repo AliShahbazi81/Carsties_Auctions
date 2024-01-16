@@ -11,7 +11,10 @@ export const authOptions: NextAuthOptions = {
 				  clientId: 'nextApp',
 				  clientSecret: 'secret',
 				  // It tells the client-app where our identity provider is
-				  issuer: 'http://localhost:5000'
+				  issuer: 'http://localhost:5000',
+				  authorization: {params: {scope: 'openid profile auctionApp'}},
+				  // If set to true, the user information will be extracted from the id_token claims, instead of making a request to the userinfo endpoint
+				  idToken: true
 			})
 	  ]
 }
