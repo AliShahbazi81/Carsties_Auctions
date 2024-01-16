@@ -12,7 +12,7 @@ export default async function Navbar()
 				  <Logo />
 				  <Search />
 				  {user ? (
-						<UserAction />
+						<UserAction  user={user}/>
 				  ) : (
 				  <LoginButton />
 				  )}
