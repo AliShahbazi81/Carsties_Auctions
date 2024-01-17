@@ -17,7 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +357,7 @@
       <workItem from="1705082231927" duration="3062000" />
       <workItem from="1705099455108" duration="602000" />
       <workItem from="1705171641869" duration="3414000" />
-      <workItem from="1705424816053" duration="616000" />
+      <workItem from="1705424816053" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
