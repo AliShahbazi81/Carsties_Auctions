@@ -25,6 +25,12 @@ export const authOptions: NextAuthOptions = {
 				  {
 						token.username = profile.username
 				  }
+				  // To make sure we have access token. This can be false since not logged in user can send request as well
+				  if (account)
+				  {
+						// To attach access_token as jwt to the token data. -> we can use it for our request to get, post, put, or delete
+						token.access_token = account.access_token
+				  }
 				  return token;
 			},
 			// Username is inside the profile section of the jwt. We can see the token, profile, account, and user inside a console log
