@@ -5,11 +5,16 @@ declare module 'next-auth' {
 	  // Hence, we have to declare the module - like what we did down below - in order to get that
 	  interface Session {
 			user: {
+				  id: string
 				  username: string
 			} & DefaultSession['user']
 	  }
 	  
 	  interface Profile {
+			username: string
+	  }
+	  
+	  interface User {
 			username: string
 	  }
 }
