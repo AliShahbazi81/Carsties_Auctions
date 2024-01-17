@@ -1,18 +1,24 @@
+'use client'
 import {useParamsStore} from "@/hooks/useParamsStore";
-import {state} from "sucrase/dist/types/parser/traverser/base";
 import Heading from "@/app/components/Heading";
 import {Button} from "flowbite-react";
+import {signIn} from "next-auth/react";
 
 type Props = {
 	  title?: string
 	  subtitle?: string
 	  showReset?: boolean
+	  // Used when user is not login, to show a proper page to sign in
+	  showLogin?: boolean
+	  callbackUrl?: string
 }
 
 export default function EmptyFilter({
 										  title = 'No matches for this filter',
 										  subtitle = 'Try changing or reseting the filter',
-										  showReset
+										  showReset,
+										  showLogin,
+										  callbackUrl
 									}: Props) {
 	  const reset = useParamsStore(state => state.reset);
 	  return (
@@ -22,6 +28,11 @@ export default function EmptyFilter({
 						{showReset && (
 							  <Button outline onClick={reset}>Remove Filters</Button>
 						)}
+						{
+							  showLogin && (
+									<Button outline onClick={() => signIn('id-server', {callbackUrl})}>Login</Button>
+							  )
+						}
 				  </div>
 			</div>
 	  )
