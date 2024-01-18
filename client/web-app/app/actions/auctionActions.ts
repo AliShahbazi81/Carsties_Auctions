@@ -2,16 +2,10 @@
 
 import {Auction, PagedResult} from "@/types";
 import {getTokenWorkaround} from "@/app/actions/authActions";
+import {fetchWrapper} from "@/lib/fetchWrapper";
 
 export async function getData(query: string): Promise<PagedResult<Auction>> {
-	  // Fetch and catch returned data from the server side
-	  // Gateway address
-	  const res = await fetch(`http://localhost:6001/search${query}`)
-
-	  if (!res.ok)
-			throw new Error("Failed to fetch data!")
-
-	  return res.json();
+	  return await fetchWrapper.get(`search${query}`)
 }
 
 export async function UpdateAuctionTest()
