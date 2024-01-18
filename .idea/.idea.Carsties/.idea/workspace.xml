@@ -17,7 +17,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20240118185622_AddAutoGeneratorForAuctionDb.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20240118185622_AddAutoGeneratorForAuctionDb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/app/session/AuthTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/session/AuthTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/lib/fetchWrapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/lib/fetchWrapper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Services/AuctionSvcHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Services/AuctionSvcHttpClient.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +49,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/53774442fef36b6713814b21c891279e254fba17f1364b6c713524356511c/Entity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/829d6ac6e62b9bee9ef8e79e827d87d0c31a7c2eefbc354135d9a8f2c4deb/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
@@ -360,6 +369,7 @@
       <workItem from="1705424816053" duration="1806000" />
       <workItem from="1705511031860" duration="599000" />
       <workItem from="1705548396205" duration="597000" />
+      <workItem from="1705599726789" duration="5451000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />

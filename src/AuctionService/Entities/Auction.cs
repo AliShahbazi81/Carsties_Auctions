@@ -26,5 +26,7 @@ public class AuctionBuilder : IEntityTypeConfiguration<Auction>
     public void Configure(EntityTypeBuilder<Auction> builder)
     {
         builder.ToTable("Auctions");
+        
+        builder.HasKey(x => x.Id);
     }
 }

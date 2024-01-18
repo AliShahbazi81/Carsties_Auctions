@@ -1,4 +1,3 @@
-using System.Globalization;
 using MongoDB.Entities;
 using SearchService.Entities;
 

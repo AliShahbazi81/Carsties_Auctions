@@ -4,17 +4,20 @@ import React, {useEffect} from "react";
 import {Button, TextInput} from "flowbite-react";
 import Input from "@/app/components/Input";
 import DateInput from "@/app/components/DateInput";
+import {createAuction} from "@/app/actions/auctionActions";
+import {Simulate} from "react-dom/test-utils";
+import error = Simulate.error;
+import {useRouter} from "next/navigation";
 
 export default function AuctionForm() {
+	  const router = useRouter();
 	  const {
 			control,
 			handleSubmit,
 			setFocus,
 			formState: {
 				  isSubmitting,
-				  isValid,
-				  isDirty,
-				  errors
+				  isValid
 			}
 	  } = useForm({
 			// Validation will only appear if user clicks in and out without filling out the required data in the inputs
@@ -25,8 +28,18 @@ export default function AuctionForm() {
 			setFocus('make')
 	  }, [setFocus])
 
-	  function onSubmit(data: FieldValues) {
-			console.log(data)
+	  async function onSubmit(data: FieldValues) {
+			try {
+				  const res = await createAuction(data);
+				  if (res.error)
+						throw new Error(res.error)
+				  
+				  // Push the client to the newly created auction
+				  router.push(`/auctions/details/${data.id}`)
+
+			} catch {
+				  console.log(error)
+			}
 	  }
 
 	  return (

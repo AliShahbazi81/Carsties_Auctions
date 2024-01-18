@@ -1,6 +1,7 @@
 using AutoMapper;
 using Contracts;
 using MassTransit;
+using MongoDB.Bson;
 using MongoDB.Entities;
 using SearchService.Entities;
 

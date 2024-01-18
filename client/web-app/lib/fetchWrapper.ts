@@ -1,4 +1,3 @@
-import {BiSolidFileJson} from "react-icons/bi";
 import {getTokenWorkaround} from "@/app/actions/authActions";
 
 const baseUrl = "http://localhost:6001/"
@@ -60,7 +59,7 @@ async function getHeaders()
 	  } as any;
 	  
 	  if (token)
-			headers.Authorization = 'Bearer' + token?.access_token
+			headers.Authorization = 'Bearer ' + token?.access_token
 	  
 	  return headers;
 }
@@ -81,7 +80,7 @@ async function handleResponse(response: Response) {
 				  message: response.statusText
 			}
 			
-			return error
+			return {error}
 	  }
 }
 

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using MongoDB.Entities;
 using SearchService.Entities;
 using SearchService.RequestHelpers;
@@ -35,6 +36,7 @@ public class SearchController : ControllerBase
                                              x.AuctionEnd > DateTime.UtcNow),
             _ => query.Match(x => x.AuctionEnd > DateTime.UtcNow)
         };
+        
 
         if (!string.IsNullOrEmpty(searchParams.Seller))
         {
