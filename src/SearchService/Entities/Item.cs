@@ -1,3 +1,4 @@
+using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Entities;
 
 namespace SearchService.Entities;

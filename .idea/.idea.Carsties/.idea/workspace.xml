@@ -16,17 +16,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20240118185622_AddAutoGeneratorForAuctionDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AuctionService/Data/Migrations/20240118185622_AddAutoGeneratorForAuctionDb.cs" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Send post request to create auction inside the client-app">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/actions/auctionActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/auctions/AuctionForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/session/AuthTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/session/AuthTest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/lib/fetchWrapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/lib/fetchWrapper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Entities/Auction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Services/AuctionSvcHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Services/AuctionSvcHttpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Entities/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Entities/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +45,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/53774442fef36b6713814b21c891279e254fba17f1364b6c713524356511c/Entity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/829d6ac6e62b9bee9ef8e79e827d87d0c31a7c2eefbc354135d9a8f2c4deb/Mapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b82153efccfb2e82d0f1f2892920706b789f382872aa6045b050f2c8875c1/ConsumeContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/Controllers/AuctionsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/AuctionService/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
@@ -369,7 +364,7 @@
       <workItem from="1705424816053" duration="1806000" />
       <workItem from="1705511031860" duration="599000" />
       <workItem from="1705548396205" duration="597000" />
-      <workItem from="1705599726789" duration="5451000" />
+      <workItem from="1705599726789" duration="12670000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -603,7 +598,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705026710769</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Send post request to create auction inside the client-app">
+      <option name="closed" value="true" />
+      <created>1705614668791</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1705614668791</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -648,7 +651,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Finalizing auction controller" />
     <MESSAGE value="Init SearchService files" />
     <MESSAGE value="MongoDb configuration and seeding database" />
     <MESSAGE value="SearchService controller" />
@@ -673,6 +675,7 @@
     <MESSAGE value="Fix bug where identity service used to not show the user credential after login using docker" />
     <MESSAGE value="Dockerized gateway service and setup configuration" />
     <MESSAGE value="Fix a bug which prevented the identity server from reading access token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix a bug which prevented the identity server from reading access token" />
+    <MESSAGE value="Send post request to create auction inside the client-app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Send post request to create auction inside the client-app" />
   </component>
 </project>

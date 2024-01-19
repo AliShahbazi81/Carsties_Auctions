@@ -2,6 +2,11 @@ services:
   postgres:
     container_name: Postgres
     image: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     environment:
       - POSTGRES_PASSWORD=postgrespw
     ports:
@@ -10,7 +15,12 @@ services:
       - /var/lib/postgresql/data
   mongodb:
     container_name: MongoDb
-    image: mongo
+    image: mongo:latest
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 3
     environment: 
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=mongopw
@@ -21,6 +31,11 @@ services:
   rabbitmq:
     container_name: RabbitMq
     image: rabbitmq:3-management-alpine
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     ports:
       - 5672:5672
       - 15672:15672
