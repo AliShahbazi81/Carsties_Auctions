@@ -4,18 +4,26 @@ import React, {useEffect} from "react";
 import {Button, TextInput} from "flowbite-react";
 import Input from "@/app/components/Input";
 import DateInput from "@/app/components/DateInput";
-import {createAuction} from "@/app/actions/auctionActions";
+import {createAuction, updateAuction} from "@/app/actions/auctionActions";
 import {Simulate} from "react-dom/test-utils";
 import error = Simulate.error;
-import {useRouter} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 import toast from "react-hot-toast";
+import {Auction} from "@/types";
 
-export default function AuctionForm() {
+
+type Props = {
+	  auction?: Auction
+}
+export default function AuctionForm({auction}: Props) {
 	  const router = useRouter();
+	  const pathname = usePathname();
 	  const {
 			control,
 			handleSubmit,
 			setFocus,
+			/*In order to use AuctionForm for updating an auction, we need the reset*/
+			reset,
 			formState: {
 				  isSubmitting,
 				  isValid
@@ -26,19 +34,38 @@ export default function AuctionForm() {
 	  })
 
 	  useEffect(() => {
+			// Check to see if we have auction. Yes -> We are updating an existing auction, No -> we are about to create one
+			if (auction) {
+				  // Get the properties we want to update
+				  const {make, model, color, mileage, year} = auction
+				  reset({make, model, color, mileage, year})
+			}
 			setFocus('make')
 	  }, [setFocus])
 
 	  async function onSubmit(data: FieldValues) {
 			try {
-				  const res = await createAuction(data);
-				  if (res.error)
-						toast.error(res.error)
-				  
-				  // Push the client to the newly created auction
-				  router.push(`/auctions/details/${data.id}`)
+				  // For updating auction
+				  let id = ''
+				  let res;
+				  // If user is being redirected to this page using create, then they are about to create an auction
+				  if (pathname === '/auctions/create') {
+						res = await createAuction(data);
+						id = res.id
+				  } else {
+						if (auction) {
+							  res = await updateAuction(data, auction.id)
+							  id = auction.id
+						}
+				  }
 
-			} catch (error: any){
+				  if (res.error)
+						throw res.error;
+
+				  // Push the client to the newly created auction
+				  router.push(`/auctions/details/${id}`)
+
+			} catch (error: any) {
 				  toast.error(error.status + ' ' + error.message)
 			}
 	  }
@@ -54,19 +81,23 @@ export default function AuctionForm() {
 						<Input label={'Mileage'} name={'mileage'} type={'number'} control={control} rules={{required: 'Mileage is required'}}/>
 				  </div>
 
-				  <Input label={'Image URL'} name={'imageUrl'} control={control} rules={{required: 'Image URL is required'}}/>
+				  {/* Since user cannot update all the properties, we make sure not to show the components down below if they are about to update  */}
+				  {pathname === "/auctions/create" &&
+                      <>
+                          <Input label={'Image URL'} name={'imageUrl'} control={control} rules={{required: 'Image URL is required'}}/>
 
-				  <div className={'grid grid-cols-2 gap-3'}>
-						<Input label={'Reserve Price (Enter 0 if no reserve)'} name={'reservePrice'} type={'number'} control={control} rules={{required: 'Reserve Price is required'}}/>
-						<DateInput
-							  label={'Auction end date/time'}
-							  name={'auctionEnd'} type={'date'}
-							  control={control}
-							  rules={{required: 'End date is required'}}
-							  dateFormat={'dd MMMM yyyy h:mm a'}
-							  showTimeSelect
-						/>
-				  </div>
+                          <div className={'grid grid-cols-2 gap-3'}>
+                              <Input label={'Reserve Price (Enter 0 if no reserve)'} name={'reservePrice'} type={'number'} control={control} rules={{required: 'Reserve Price is required'}}/>
+                              <DateInput
+                                  label={'Auction end date/time'}
+                                  name={'auctionEnd'} type={'date'}
+                                  control={control}
+                                  rules={{required: 'End date is required'}}
+                                  dateFormat={'dd MMMM yyyy h:mm a'}
+                                  showTimeSelect
+                              />
+                          </div>
+                      </>}
 
 				  <div className={'flex justify-between'}>
 						<Button

@@ -3,6 +3,7 @@
 import {Auction, PagedResult} from "@/types";
 import {fetchWrapper} from "@/lib/fetchWrapper";
 import {FieldValues} from "react-hook-form";
+import {revalidatePath} from "next/cache";
 
 export async function getData(query: string): Promise<PagedResult<Auction>> {
 	  return await fetchWrapper.get(`search${query}`)
@@ -24,4 +25,13 @@ export async function createAuction(data: FieldValues)
 export async function getDetailedViewData(id: string) : Promise<Auction>
 {
 	  return await fetchWrapper.get(`auctions/${id}`)
+}
+
+export async function updateAuction(data: FieldValues, id: string)
+{
+	  const res = await fetchWrapper.put(`auctions/${id}`, data)
+	  // revalidatePath is used when we want to re-render a page. When we update the auction, by default, it shows the previous value before updating
+	  // For fixing that, we will use revalidatePath, so the page will be re-rendered
+	  revalidatePath(`/auctions/${id}`)
+	  return res;
 }
