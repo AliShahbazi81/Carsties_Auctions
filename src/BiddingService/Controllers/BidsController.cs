@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using BiddingService.DTOs;
 using BiddingService.Enums;
 using BiddingService.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -71,13 +73,21 @@ public class BidsController : ControllerBase
     }
 
     [HttpGet("{auctionId}")]
-    public async Task<ActionResult<List<Bid>>> GetBidsAuction(string auctionId)
+    public async Task<ActionResult<List<BidDto>>> GetBidsAuction(string auctionId)
     {
         var bids = await DB.Find<Bid>()
             .Match(a => a.AuctionId == auctionId)
             .Sort(b => b.Descending(a => a.BidTime))
             .ExecuteAsync();
 
-        return bids;
+        return bids.Select(x => new BidDto
+        (
+            x.ID,
+            x.AuctionId,
+            x.Bidder,
+            x.BidTime,
+            x.Amount,
+            x.BidStatus.ToString()
+        )).ToList();
     }
 }

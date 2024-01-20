@@ -19,16 +19,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Enums/BidStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Models/Auction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Models/Bid.cs" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add consumer to Bid service to get the created auction">
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/DTOs/BidDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +416,7 @@
       <workItem from="1705691348419" duration="1447000" />
       <workItem from="1705711618401" duration="1236000" />
       <workItem from="1705771501989" duration="3748000" />
-      <workItem from="1705784601708" duration="589000" />
+      <workItem from="1705784601708" duration="2920000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -679,7 +674,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705774121880</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add consumer to Bid service to get the created auction">
+      <option name="closed" value="true" />
+      <created>1705785261186</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1705785261186</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -724,7 +727,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="SearchService controller" />
     <MESSAGE value="Make sync connection between Auction and Search services" />
     <MESSAGE value="Setup masstransit rabbitmq, contracts, and consumer" />
     <MESSAGE value="Publish a message to bus after auction creation" />
@@ -749,6 +751,7 @@
     <MESSAGE value="Send post request to create auction inside the client-app" />
     <MESSAGE value="Add healthcheck to docker images and services" />
     <MESSAGE value="Add bidding service, rabbitMq, and mongoDb Configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bidding service, rabbitMq, and mongoDb Configurations" />
+    <MESSAGE value="Add consumer to Bid service to get the created auction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add consumer to Bid service to get the created auction" />
   </component>
 </project>
