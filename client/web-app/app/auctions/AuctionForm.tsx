@@ -8,6 +8,7 @@ import {createAuction} from "@/app/actions/auctionActions";
 import {Simulate} from "react-dom/test-utils";
 import error = Simulate.error;
 import {useRouter} from "next/navigation";
+import toast from "react-hot-toast";
 
 export default function AuctionForm() {
 	  const router = useRouter();
@@ -32,13 +33,13 @@ export default function AuctionForm() {
 			try {
 				  const res = await createAuction(data);
 				  if (res.error)
-						throw new Error(res.error)
+						toast.error(res.error)
 				  
 				  // Push the client to the newly created auction
 				  router.push(`/auctions/details/${data.id}`)
 
-			} catch {
-				  console.log(error)
+			} catch (error: any){
+				  toast.error(error.status + ' ' + error.message)
 			}
 	  }
 
