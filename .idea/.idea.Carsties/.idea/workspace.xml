@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Enums/BidStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Models/Auction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Models/Bid.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carsties.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Carsties.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web-app/app/nav/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/nav/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,7 +420,8 @@
       <workItem from="1705599726789" duration="13809000" />
       <workItem from="1705691348419" duration="1447000" />
       <workItem from="1705711618401" duration="1236000" />
-      <workItem from="1705771501989" duration="1012000" />
+      <workItem from="1705771501989" duration="3748000" />
+      <workItem from="1705784601708" duration="589000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -670,7 +671,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705622755316</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add bidding service, rabbitMq, and mongoDb Configurations">
+      <option name="closed" value="true" />
+      <created>1705774121880</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1705774121880</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -715,7 +724,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="MongoDb configuration and seeding database" />
     <MESSAGE value="SearchService controller" />
     <MESSAGE value="Make sync connection between Auction and Search services" />
     <MESSAGE value="Setup masstransit rabbitmq, contracts, and consumer" />
@@ -740,6 +748,7 @@
     <MESSAGE value="Fix a bug which prevented the identity server from reading access token" />
     <MESSAGE value="Send post request to create auction inside the client-app" />
     <MESSAGE value="Add healthcheck to docker images and services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add healthcheck to docker images and services" />
+    <MESSAGE value="Add bidding service, rabbitMq, and mongoDb Configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bidding service, rabbitMq, and mongoDb Configurations" />
   </component>
 </project>
