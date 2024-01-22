@@ -20,19 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Consumers/AuctionFinishedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Consumers/AuctionFinishedConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Consumers/BidPlacedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Consumers/BidPlacedConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GatewayService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IdentityService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +448,10 @@
       <workItem from="1705771501989" duration="3748000" />
       <workItem from="1705784601708" duration="5350000" />
       <workItem from="1705863031649" duration="4376000" />
-      <workItem from="1705889514417" duration="2528000" />
+      <workItem from="1705889514417" duration="4923000" />
+      <workItem from="1705897873560" duration="13000" />
+      <workItem from="1705946297013" duration="1392000" />
+      <workItem from="1705961644625" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -723,7 +725,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705792537277</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add biddingService docker, refactor the other services docker files">
+      <option name="closed" value="true" />
+      <created>1705895381292</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1705895381292</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add background service to check if an auction is finished">
+      <option name="closed" value="true" />
+      <created>1705896954526</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1705896954526</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -768,8 +786,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Setup masstransit rabbitmq, contracts, and consumer" />
-    <MESSAGE value="Publish a message to bus after auction creation" />
     <MESSAGE value="Add inbox and outbox inside AuctionService" />
     <MESSAGE value="Retry policy for MongoDb inside SearchService" />
     <MESSAGE value="Add AuctionCreatedFault and consumer" />
@@ -793,6 +809,8 @@
     <MESSAGE value="Add bidding service, rabbitMq, and mongoDb Configurations" />
     <MESSAGE value="Add consumer to Bid service to get the created auction" />
     <MESSAGE value="Add BidDto to be returned" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BidDto to be returned" />
+    <MESSAGE value="Add biddingService docker, refactor the other services docker files" />
+    <MESSAGE value="Add background service to check if an auction is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add background service to check if an auction is finished" />
   </component>
 </project>
