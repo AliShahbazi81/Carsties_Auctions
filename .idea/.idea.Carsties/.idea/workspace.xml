@@ -19,19 +19,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add gRPC and proto file to AuctionService as Server">
+      <change afterPath="$PROJECT_DIR$/src/AuctionService/Services/GrpcAuctionService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/protos/auctions.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/AuctionService.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,7 +451,7 @@
       <workItem from="1705889514417" duration="4923000" />
       <workItem from="1705897873560" duration="13000" />
       <workItem from="1705946297013" duration="1392000" />
-      <workItem from="1705961644625" duration="1151000" />
+      <workItem from="1705961644625" duration="4741000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -741,7 +741,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705896954526</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add gRPC and proto file to AuctionService as Server">
+      <option name="closed" value="true" />
+      <created>1705965538250</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1705965538250</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -786,7 +794,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add inbox and outbox inside AuctionService" />
     <MESSAGE value="Retry policy for MongoDb inside SearchService" />
     <MESSAGE value="Add AuctionCreatedFault and consumer" />
     <MESSAGE value="Auction update and delete publisher and consumer" />
@@ -811,6 +818,7 @@
     <MESSAGE value="Add BidDto to be returned" />
     <MESSAGE value="Add biddingService docker, refactor the other services docker files" />
     <MESSAGE value="Add background service to check if an auction is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add background service to check if an auction is finished" />
+    <MESSAGE value="Add gRPC and proto file to AuctionService as Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gRPC and proto file to AuctionService as Server" />
   </component>
 </project>

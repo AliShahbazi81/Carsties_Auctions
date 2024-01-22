@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using BiddingService.DTOs;
 using BiddingService.Enums;
 using BiddingService.Models;
+using BiddingService.Services;
 using Contracts;
 using MassTransit;
 using Microsoft.AspNetCore.Authorization;
@@ -18,9 +19,13 @@ namespace BiddingService.Controllers;
 public class BidsController : ControllerBase
 {
     private readonly IPublishEndpoint _endpoint;
-    public BidsController(IPublishEndpoint endpoint)
+    private readonly GrpcAuctionClient _grpcClient;
+    public BidsController(
+        IPublishEndpoint endpoint, 
+        GrpcAuctionClient grpcClient)
     {
         _endpoint = endpoint;
+        _grpcClient = grpcClient;
     }
     [HttpPost]
     public async Task<ActionResult<BidDto>> PlaceBid(string auctionId, int amount)
@@ -29,8 +34,10 @@ public class BidsController : ControllerBase
 
         if (auction == null)
         {
-            // TODO: Check with auction service if it has auction
-            return NotFound();
+            auction = _grpcClient.GetAuction(auctionId);
+
+            if (auction is null)
+                return BadRequest("Cannot accept bids on this auction at this time");
         }
 
         if (auction.Seller == User.Identity.Name)

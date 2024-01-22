@@ -18,5 +18,5 @@ message GrpcAuctionModel {
 }
 
 message GrpcAuctionResponse {
-  GrpcAuctionResponse auction = 1;
+  GrpcAuctionModel auction = 1;
 }
