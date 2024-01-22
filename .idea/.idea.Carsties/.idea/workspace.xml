@@ -19,11 +19,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add consumer to Bid service to get the created auction">
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/DTOs/BidDto.cs" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BiddingService/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Consumers/AuctionFinishedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Consumers/AuctionFinishedConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Consumers/BidPlacedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Consumers/BidPlacedConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Consumers/AuctionCreatedConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IdentityService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/IdentityService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchService/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/src/IdentityService/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IdentityService/SeedData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IdentityService/Services/CustomProfileService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/alish/RiderProjects/Carsties/src/SearchService/Consumers/AuctionCreatedConsumer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -97,7 +107,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.IdentityService: SelfHost">
+  <component name="RunManager" selected=".NET Launch Settings Profile.BiddingService: http">
     <configuration name="AuctionService: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/AuctionService/AuctionService.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -314,6 +324,27 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="BiddingService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="biddingservice" />
+          <option name="containerName" value="biddingservice" />
+          <option name="contextFolderPath" value="C:\Users\alish\RiderProjects\Carsties" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/BiddingService/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="GatewayService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -416,7 +447,9 @@
       <workItem from="1705691348419" duration="1447000" />
       <workItem from="1705711618401" duration="1236000" />
       <workItem from="1705771501989" duration="3748000" />
-      <workItem from="1705784601708" duration="2920000" />
+      <workItem from="1705784601708" duration="5350000" />
+      <workItem from="1705863031649" duration="4376000" />
+      <workItem from="1705889514417" duration="2528000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -682,7 +715,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705785261186</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Add BidDto to be returned">
+      <option name="closed" value="true" />
+      <created>1705792537277</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1705792537277</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -727,7 +768,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Make sync connection between Auction and Search services" />
     <MESSAGE value="Setup masstransit rabbitmq, contracts, and consumer" />
     <MESSAGE value="Publish a message to bus after auction creation" />
     <MESSAGE value="Add inbox and outbox inside AuctionService" />
@@ -752,6 +792,7 @@
     <MESSAGE value="Add healthcheck to docker images and services" />
     <MESSAGE value="Add bidding service, rabbitMq, and mongoDb Configurations" />
     <MESSAGE value="Add consumer to Bid service to get the created auction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add consumer to Bid service to get the created auction" />
+    <MESSAGE value="Add BidDto to be returned" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BidDto to be returned" />
   </component>
 </project>

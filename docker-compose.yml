@@ -103,3 +103,17 @@ services:
       - ASPNETCORE_URLS=http://+80
     ports:
       - 6001:80
+  bidding-svc:
+    container_name: BiddingService
+    image: alishahbazi81/bidding-svc
+    build:
+      context: .
+      dockerfile: src/BiddingService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE-URLS=http://+80
+    ports:
+      - 7003:80
+    depends_on:
+      - postgres
+      - rabbitmq
