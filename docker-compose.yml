@@ -113,6 +113,8 @@ services:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE-URLS=http://+80
       - ConnectionStrings__BidDbConnection=mongodb://root:mongopw@mongodb
+      - RabbitMq__Host=rabbitmq
+      - IdentityServiceUrl=http://identity-svc
     ports:
       - 7003:80
     depends_on:
