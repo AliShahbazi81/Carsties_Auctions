@@ -19,19 +19,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add gRPC and proto file to AuctionService as Server">
-      <change afterPath="$PROJECT_DIR$/src/AuctionService/Services/GrpcAuctionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BiddingService/protos/auctions.proto" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/protos/auctions.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/BiddingService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,7 +441,9 @@
       <workItem from="1705889514417" duration="4923000" />
       <workItem from="1705897873560" duration="13000" />
       <workItem from="1705946297013" duration="1392000" />
-      <workItem from="1705961644625" duration="4741000" />
+      <workItem from="1705961644625" duration="6162000" />
+      <workItem from="1705971486115" duration="10000" />
+      <workItem from="1706058960642" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -749,7 +741,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705965538250</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add client service to bidding service">
+      <option name="closed" value="true" />
+      <created>1705967938904</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1705967938905</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add environment for biddingService inside docker compose">
+      <option name="closed" value="true" />
+      <created>1705968163671</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1705968163671</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -794,8 +802,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Retry policy for MongoDb inside SearchService" />
-    <MESSAGE value="Add AuctionCreatedFault and consumer" />
     <MESSAGE value="Auction update and delete publisher and consumer" />
     <MESSAGE value="Init IdentityService files" />
     <MESSAGE value="Setup identity config, register page and cookies" />
@@ -819,6 +825,8 @@
     <MESSAGE value="Add biddingService docker, refactor the other services docker files" />
     <MESSAGE value="Add background service to check if an auction is finished" />
     <MESSAGE value="Add gRPC and proto file to AuctionService as Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gRPC and proto file to AuctionService as Server" />
+    <MESSAGE value="Add client service to bidding service" />
+    <MESSAGE value="Add environment for biddingService inside docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add environment for biddingService inside docker compose" />
   </component>
 </project>
