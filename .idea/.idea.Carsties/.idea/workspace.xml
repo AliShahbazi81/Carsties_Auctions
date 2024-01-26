@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionService/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,7 +443,8 @@
       <workItem from="1705946297013" duration="1392000" />
       <workItem from="1705961644625" duration="6162000" />
       <workItem from="1705971486115" duration="10000" />
-      <workItem from="1706058960642" duration="667000" />
+      <workItem from="1706058960642" duration="1899000" />
+      <workItem from="1706143845122" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -757,7 +758,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705968163671</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fix Grpc url typo">
+      <option name="closed" value="true" />
+      <created>1706064562751</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1706064562751</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -802,7 +811,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Auction update and delete publisher and consumer" />
     <MESSAGE value="Init IdentityService files" />
     <MESSAGE value="Setup identity config, register page and cookies" />
     <MESSAGE value="Get access token from postman using Duende" />
@@ -827,6 +835,7 @@
     <MESSAGE value="Add gRPC and proto file to AuctionService as Server" />
     <MESSAGE value="Add client service to bidding service" />
     <MESSAGE value="Add environment for biddingService inside docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add environment for biddingService inside docker compose" />
+    <MESSAGE value="Fix Grpc url typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Grpc url typo" />
   </component>
 </project>
