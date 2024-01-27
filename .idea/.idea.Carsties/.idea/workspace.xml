@@ -22,13 +22,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add consumers and configs for notification service">
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,6 +426,27 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="NotificationService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="notificationservice" />
+          <option name="containerName" value="notificationservice" />
+          <option name="contextFolderPath" value="C:\Users\alish\RiderProjects\Carsties" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/NotificationService/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="SearchService/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -500,7 +519,7 @@
       <workItem from="1706242015568" duration="632000" />
       <workItem from="1706300719955" duration="2661000" />
       <workItem from="1706334263906" duration="1301000" />
-      <workItem from="1706339771013" duration="1559000" />
+      <workItem from="1706339771013" duration="4858000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -838,7 +857,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706328635330</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Add biddingService configs to gateway service">
+      <option name="closed" value="true" />
+      <created>1706341365047</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1706341365047</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add consumers and configs for notification service">
+      <option name="closed" value="true" />
+      <created>1706344040221</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1706344040221</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -883,8 +918,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Get access token from postman using Duende" />
-    <MESSAGE value="Add custom profile service to jwt token to return username and fullname" />
     <MESSAGE value="Add authorization to endpoints" />
     <MESSAGE value="GatewayService init files and configs" />
     <MESSAGE value="Add authentication layer to gateway service" />
@@ -908,6 +941,8 @@
     <MESSAGE value="Fix Grpc url typo" />
     <MESSAGE value="Change grpc url" />
     <MESSAGE value="NotificationService init files" />
-    <option name="LAST_COMMIT_MESSAGE" value="NotificationService init files" />
+    <MESSAGE value="Add biddingService configs to gateway service" />
+    <MESSAGE value="Add consumers and configs for notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add consumers and configs for notification service" />
   </component>
 </project>
