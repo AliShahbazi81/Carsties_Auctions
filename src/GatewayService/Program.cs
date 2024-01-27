@@ -20,7 +20,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.NameClaimType = "username";
     });
 
+// Cors policy is just being used for the signalR since the client has to be connected straight away with the signalR
+builder.Services.AddCors(option =>
+{
+    option.AddPolicy("customPolicy", b =>
+    {
+        b.AllowAnyHeader()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithOrigins(builder.Configuration["ClientApp"]!);
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors();
 
 app.MapReverseProxy();
 
