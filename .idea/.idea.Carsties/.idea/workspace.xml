@@ -22,11 +22,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="Add consumers and configs for notification service">
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/Dockerfile" afterDir="false" />
+    <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -519,7 +516,7 @@
       <workItem from="1706242015568" duration="632000" />
       <workItem from="1706300719955" duration="2661000" />
       <workItem from="1706334263906" duration="1301000" />
-      <workItem from="1706339771013" duration="4858000" />
+      <workItem from="1706339771013" duration="5346000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -873,7 +870,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706344040221</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Dockerized notification service">
+      <option name="closed" value="true" />
+      <created>1706345024405</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1706345024405</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -918,7 +923,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add authorization to endpoints" />
     <MESSAGE value="GatewayService init files and configs" />
     <MESSAGE value="Add authentication layer to gateway service" />
     <MESSAGE value="Add consumer for auction finished and bid placed in auction service" />
@@ -943,6 +947,7 @@
     <MESSAGE value="NotificationService init files" />
     <MESSAGE value="Add biddingService configs to gateway service" />
     <MESSAGE value="Add consumers and configs for notification service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add consumers and configs for notification service" />
+    <MESSAGE value="Dockerized notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerized notification service" />
   </component>
 </project>
