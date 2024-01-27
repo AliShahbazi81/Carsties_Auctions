@@ -1,5 +1,5 @@
 // ID will be taken from the search params which is inside the query string
-import {getDetailedViewData} from "@/app/actions/auctionActions";
+import {getBidsForAuction, getDetailedViewData} from "@/app/actions/auctionActions";
 import Heading from "@/app/components/Heading";
 import CountDownTimer from "@/app/auctions/CountDownTimer";
 import CarImage from "@/app/auctions/CarImage";
@@ -7,11 +7,13 @@ import DetailedSpecs from "@/app/auctions/details/[id]/DetailedSpecs";
 import {getCurrentUser} from "@/app/actions/authActions";
 import EditButton from "@/app/auctions/details/[id]/EditButton";
 import DeleteButton from "@/app/auctions/details/DeleteButton";
+import BidItem from "@/app/auctions/details/[id]/BidItem";
 
 export default async function Details({params}: { params: { id: string } }) {
 	  const data = await getDetailedViewData(params.id);
 	  // Check if the user is creator of the auction
 	  const user = await getCurrentUser();
+	  const bids = await getBidsForAuction(params.id)
 
 	  return (
 			<div>
@@ -40,6 +42,9 @@ export default async function Details({params}: { params: { id: string } }) {
 						{/*For bids contents*/}
 						<div className={'border-2 rounded-lg p-2 bg-gray-100'}>
 							  <Heading title={'Bids'}/>
+							  {bids.map((bid) => (
+									<BidItem key={bid.id} bid={bid} />
+							  ))}
 						</div>
 				  </div>
 				  {/* Table for information */}
