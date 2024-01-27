@@ -7,7 +7,7 @@ import {getBidsForAuction} from "@/app/actions/auctionActions";
 import toast from "react-hot-toast";
 import Heading from "@/app/components/Heading";
 import BidItem from "@/app/auctions/details/[id]/BidItem";
-import numberWithCommas from "@/app/lib/numberWithComma";
+import numberWithCommas from "@/lib/numberWithComma";
 import EmptyFilter from "@/app/components/EmptyFilter";
 import BidForm from "@/app/auctions/details/[id]/BidForm";
 
@@ -55,9 +55,19 @@ export default function BidList({user, auction}: Props) {
 							  </>
 						)}
 				  </div>
-				  
+
 				  <div className={'px-2 pb-2 text-gray-500'}>
-						<BidForm auctionId={auction.id} highBid={highBid}/>
+						{!user ? (
+							  <div className={'flex items-center justify-center p-2 text-lg font-semibold'}>
+									Please login to make a bid!
+							  </div>
+						) : user && user.username === auction.seller ? (
+							  <div className={'flex items-center justify-center p-2 text-lg font-semibold'}>
+									You cannot bid on your own auction!
+							  </div>
+						) : (
+							  <BidForm auctionId={auction.id} highBid={highBid}/>
+						)}
 				  </div>
 			</div>
 	  )
