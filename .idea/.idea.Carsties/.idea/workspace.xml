@@ -11,6 +11,9 @@
     <projectFile profileName="http">src/GatewayService/GatewayService.csproj</projectFile>
     <projectFile profileName="https">src/GatewayService/GatewayService.csproj</projectFile>
     <projectFile profileName="SelfHost">src/IdentityService/IdentityService.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/NotificationService/NotificationService.csproj</projectFile>
+    <projectFile profileName="http">src/NotificationService/NotificationService.csproj</projectFile>
+    <projectFile profileName="https">src/NotificationService/NotificationService.csproj</projectFile>
     <projectFile profileName="IIS Express">src/SearchService/SearchService.csproj</projectFile>
     <projectFile profileName="http">src/SearchService/SearchService.csproj</projectFile>
     <projectFile profileName="https">src/SearchService/SearchService.csproj</projectFile>
@@ -20,8 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/WeatherForecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotificationService/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carsties.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Carsties.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +257,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="NotificationService: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="NotificationService: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="NotificationService: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="SearchService: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/SearchService/SearchService.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -445,6 +500,8 @@
       <workItem from="1705971486115" duration="10000" />
       <workItem from="1706058960642" duration="1899000" />
       <workItem from="1706143845122" duration="1197000" />
+      <workItem from="1706242015568" duration="632000" />
+      <workItem from="1706300719955" duration="2010000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -766,7 +823,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706064562751</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Change grpc url">
+      <option name="closed" value="true" />
+      <created>1706242048650</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1706242048650</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -811,7 +876,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init IdentityService files" />
     <MESSAGE value="Setup identity config, register page and cookies" />
     <MESSAGE value="Get access token from postman using Duende" />
     <MESSAGE value="Add custom profile service to jwt token to return username and fullname" />
@@ -836,6 +900,7 @@
     <MESSAGE value="Add client service to bidding service" />
     <MESSAGE value="Add environment for biddingService inside docker compose" />
     <MESSAGE value="Fix Grpc url typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Grpc url typo" />
+    <MESSAGE value="Change grpc url" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change grpc url" />
   </component>
 </project>
