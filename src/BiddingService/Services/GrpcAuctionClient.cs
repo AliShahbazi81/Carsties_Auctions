@@ -1,5 +1,4 @@
 using System;
-using Amazon.Runtime.Internal.Util;
 using AuctionService;
 using BiddingService.Models;
 using Grpc.Net.Client;

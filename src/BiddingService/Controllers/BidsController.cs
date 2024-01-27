@@ -8,7 +8,6 @@ using BiddingService.Models;
 using BiddingService.Services;
 using Contracts;
 using MassTransit;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Entities;
 

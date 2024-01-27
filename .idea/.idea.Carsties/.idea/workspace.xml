@@ -23,15 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/NotificationService.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotificationService/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Carsties.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Carsties.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Controllers/BidsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiddingService/Services/GrpcAuctionClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -501,7 +498,9 @@
       <workItem from="1706058960642" duration="1899000" />
       <workItem from="1706143845122" duration="1197000" />
       <workItem from="1706242015568" duration="632000" />
-      <workItem from="1706300719955" duration="2010000" />
+      <workItem from="1706300719955" duration="2661000" />
+      <workItem from="1706334263906" duration="1301000" />
+      <workItem from="1706339771013" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />
@@ -831,7 +830,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706242048650</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="NotificationService init files">
+      <option name="closed" value="true" />
+      <created>1706328635329</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1706328635330</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -876,7 +883,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Setup identity config, register page and cookies" />
     <MESSAGE value="Get access token from postman using Duende" />
     <MESSAGE value="Add custom profile service to jwt token to return username and fullname" />
     <MESSAGE value="Add authorization to endpoints" />
@@ -901,6 +907,7 @@
     <MESSAGE value="Add environment for biddingService inside docker compose" />
     <MESSAGE value="Fix Grpc url typo" />
     <MESSAGE value="Change grpc url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change grpc url" />
+    <MESSAGE value="NotificationService init files" />
+    <option name="LAST_COMMIT_MESSAGE" value="NotificationService init files" />
   </component>
 </project>
