@@ -128,9 +128,9 @@ services:
     depends_on:
       - postgres
       - rabbitmq
-  notification-svc:
+  notifications-svc:
     container_name: NotificationService
-    image: alishahbazi81/notification-svc:latest
+    image: alishahbazi81/notifications-svc:latest
     build:
       context: .
       dockerfile: src/NotificationService/Dockerfile

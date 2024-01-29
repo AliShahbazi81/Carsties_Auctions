@@ -24,6 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="52821ba5-6e71-4e45-9bec-0fa2480b5c89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Carsties/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web-app/app/providers/SignalRProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/web-app/app/providers/SignalRProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatewayService/appsettings.Docker.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -517,6 +520,8 @@
       <workItem from="1706300719955" duration="2661000" />
       <workItem from="1706334263906" duration="1301000" />
       <workItem from="1706339771013" duration="5346000" />
+      <workItem from="1706392604664" duration="2876000" />
+      <workItem from="1706411622981" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="Init files">
       <option name="closed" value="true" />

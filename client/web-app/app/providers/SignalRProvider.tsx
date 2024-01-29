@@ -35,7 +35,7 @@ export default function SignalRProvider({children}: Props)
 						.then(() => {
 							  console.log("Connected to notifications hub");
 							  
-							  connection.on("BidPlaced", (bid: Bid) => {
+							  connection.on("BidsPlaced", (bid: Bid) => {
 									console.log("Bid Placed even received");
 									if (bid.bidStatus.includes('Accepted'))
 									{
