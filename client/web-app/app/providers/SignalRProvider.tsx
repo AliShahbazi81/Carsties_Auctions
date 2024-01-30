@@ -3,10 +3,12 @@ import {ReactNode, useEffect, useState} from "react";
 import {HubConnection, HubConnectionBuilder} from "@microsoft/signalr";
 import {useAuctionStore} from "@/hooks/useAuctionStore";
 import {useBidStore} from "@/hooks/useBidStore";
-import {Auction, Bid} from "@/types";
+import {Auction, AuctionFinished, Bid} from "@/types";
 import {User} from "next-auth";
 import toast from "react-hot-toast";
 import AuctionCreatedToast from "@/app/components/AuctionCreatedToast";
+import {getDetailedViewData} from "@/app/actions/auctionActions";
+import AuctionFinishedToast from "@/app/components/AuctionFinishedToast";
 
 
 type Props = {
@@ -55,6 +57,15 @@ export default function SignalRProvider({children, user}: Props)
 										  return toast(<AuctionCreatedToast auction={auction} />, 
 												{duration: 10000})
 									}
+							  })
+							  
+							  connection.on('AuctionFinished', (finishedAuction: AuctionFinished) => {
+									const auction = getDetailedViewData(finishedAuction.auctionId);
+									return toast.promise(auction, {
+										  loading: 'Loading',
+										  success: (auction) => <AuctionFinishedToast finishedAuction={finishedAuction} auction={auction} />,
+										  error: (err) => 'Auction Finished!'
+									}, {success: {duration: 10000, icon: null}})
 							  })
 							  
 						}).catch(error => console.log(error))
