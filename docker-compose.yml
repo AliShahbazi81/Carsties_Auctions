@@ -117,7 +117,7 @@ services:
       context: .
       dockerfile: src/BiddingService/Dockerfile
     environment:
-      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE-URLS=http://+80
       - ConnectionStrings__BidDbConnection=mongodb://root:mongopw@mongodb
       - RabbitMq__Host=rabbitmq
@@ -135,7 +135,7 @@ services:
       context: .
       dockerfile: src/NotificationService/Dockerfile
     environment:
-      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
       - RabbitMq__Host=rabbitmq
     ports:
